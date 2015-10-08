@@ -9,7 +9,7 @@
 namespace SimpleDataBase;
 
 
-public class SimpleDataBase
+class SimpleDataBase
 {
     protected $DBName;
     protected $content;
