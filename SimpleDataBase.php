@@ -12,7 +12,7 @@ namespace SimpleDataBase;
 class SimpleDataBase
 {
     protected $DBName;
-    protected $content;
+    protected $Data;
     private $DatabaseName;
 
     /**
@@ -26,11 +26,29 @@ class SimpleDataBase
         }
 
         //ファイルが見つからなかったら何も返さない
-        if(!is_dir("SimpleDB" + $DatabaseName)) return; throw new Exception("ファイルが見つかりません");
+        if (!is_dir("SimpleDB" + $DatabaseName)) return;
+        throw new Exception("ファイルが見つかりません");
 
         $this->DatabaseName = $DatabaseName;
     }
 
+    public function Create($TableName, $TagList)
+    {
+
+    }
+
+    public function SELECT()
+    {
+
+    }
+
+    public function FROM()
+    {
+    }
+
+    public function WHERE()
+    {
+    }
 
 
 }
